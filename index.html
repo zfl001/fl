@@ -1,12 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			#myCanvas {
+				border: 1px solid #f00;
+				color: #632f9e;
+			}
+		</style>
+		<script>
+			window.onload = function() {
+				var myCanvas = document.getElementById("myCanvas");
+				var c1 = myCanvas.getContext("2d");
+
+				c1.beginPath();
+				c1.fillStyle = "#c6cdfb";
+				c1.rect(0, 0, 850, 600);
+				c1.fill();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.fillStyle = "#735ca4";
+				c1.moveTo(100, 200);
+				c1.lineTo(100, 420);
+				c1.lineTo(700, 420);
+				c1.lineTo(700, 200);
+				c1.lineTo(100, 200);
+				c1.fill();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.fillStyle = "#5b4a90";
+				c1.moveTo(100, 210);
+				c1.lineTo(210, 210);
+				c1.lineTo(210, 230);
+				c1.lineTo(220, 230);
+				c1.lineTo(220, 200);
+				c1.lineTo(100, 200);
+				c1.lineTo(100, 210);
+				c1.fill();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.fillStyle = "#9f85ce";
+				c1.moveTo(90, 200);
+				c1.lineTo(90, 185);
+				c1.lineTo(710, 185);
+				c1.lineTo(710, 200);
+				c1.lineTo(90, 200);
+				c1.fill();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.fillStyle = "#fefff6";
+				c1.moveTo(80, 185);
+				c1.lineTo(80, 160);
+				c1.lineTo(720, 160);
+				c1.lineTo(720, 185);
+				c1.lineTo(80, 185);
+				c1.fill();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.fillStyle = "#e9bade";
+				c1.moveTo(80, 160);
+				c1.lineTo(160, 50);
+				c1.lineTo(640, 50);
+				c1.lineTo(720, 160);
+				c1.lineTo(80, 160);
+				c1.fill();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.strokeStyle = "#ab93dd";
+				c1.lineWidth = 10;
+				c1.fillStyle = "#b3d4ff";
+				c1.moveTo(220, 230);
+				c1.lineTo(120, 230);
+				c1.lineTo(120, 350);
+				c1.lineTo(220, 350);
+				c1.lineTo(220, 230);
+				c1.fill();
+				c1.stroke();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.strokeStyle = "#ab93dd";
+				c1.lineWidth = 7;
+				c1.moveTo(170, 230);
+				c1.lineTo(170, 350);
+				c1.stroke();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.fillStyle = "#957bc4";
+				c1.moveTo(220, 200);
+				c1.lineTo(520, 200);
+				c1.lineTo(520, 420);
+				c1.lineTo(220, 420);
+				c1.lineTo(220, 200);
+				c1.fill();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.fillStyle = "#7f62b6";
+				c1.moveTo(220, 200);
+				c1.lineTo(220, 185);
+				c1.lineTo(520, 185);
+				c1.lineTo(520, 200);
+				c1.lineTo(220, 200);
+				c1.fill();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.fillStyle = "#fefff6";
+				c1.moveTo(210, 160);
+				c1.lineTo(180, 160);
+				c1.lineTo(370, 30);
+				c1.lineTo(555, 160);
+				c1.lineTo(530, 160);
+				c1.lineTo(370, 65);
+				c1.lineTo(210, 160);
+				c1.fill();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.fillStyle = "#9f85ce";
+				c1.moveTo(210, 185);
+				c1.lineTo(210, 160);
+				c1.lineTo(530, 160);
+				c1.lineTo(530, 185);
+				c1.lineTo(210, 185);
+				c1.fill();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.fillStyle = "#957bc4";
+				c1.moveTo(210, 160);
+				c1.lineTo(370, 55);
+				c1.lineTo(530, 160);
+				c1.lineTo(210, 160);
+				c1.fill();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.strokeStyle = "#ab93dd";
+				c1.lineWidth = 7;
+				c1.fillStyle = "#b3d4ff";
+				c1.moveTo(290, 130);
+				c1.lineTo(370, 75);
+				c1.lineTo(450, 130);
+				c1.lineTo(290, 130);
+				c1.fill();
+				c1.stroke();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.strokeStyle = "#ab93dd";
+				c1.lineWidth = 7;
+				c1.moveTo(330, 130);
+				c1.lineTo(330, 100);
+				c1.stroke();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.strokeStyle = "#ab93dd";
+				c1.lineWidth = 7;
+				c1.moveTo(410, 130);
+				c1.lineTo(410, 100);
+				c1.stroke();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.fillStyle = "#5a4b90";
+				c1.moveTo(520, 420);
+				c1.lineTo(520, 200);
+				c1.lineTo(700, 200);
+				c1.lineTo(700, 210);
+				c1.lineTo(530, 210);
+				c1.lineTo(530, 420);
+				c1.lineTo(520, 420);
+				c1.fill();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.strokeStyle = "#ab93dd";
+				c1.lineWidth = 5;
+				c1.fillStyle = "#b3d4ff";
+				c1.moveTo(250, 230);
+				c1.lineTo(360, 230);
+				c1.lineTo(360, 330);
+				c1.lineTo(250, 330);
+				c1.lineTo(250, 230);
+				c1.fill();
+				c1.stroke();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.strokeStyle = "#ab93dd";
+				c1.lineWidth = 5;
+				c1.moveTo(280, 230);
+				c1.lineTo(280, 330);
+				c1.stroke();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.strokeStyle = "#ab93dd";
+				c1.lineWidth = 5;
+				c1.moveTo(330, 230);
+				c1.lineTo(330, 330);
+				c1.stroke();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.strokeStyle = "#fefff6";
+				c1.lineWidth = 15;
+				c1.moveTo(240, 330);
+				c1.lineTo(370, 330);
+				c1.stroke();
+				c1.closePath();
+				
+				
+
+				c1.beginPath();
+				c1.strokeStyle = "#e2bb5e";
+				c1.lineWidth = 10;
+				c1.fillStyle = "#be9658";
+				c1.moveTo(410, 282);
+				c1.lineTo(500, 282);
+				c1.lineTo(500, 415);
+				c1.lineTo(410, 415);
+				c1.lineTo(410, 282);
+				c1.fill();
+				c1.stroke();
+				c1.closePath();
+
+				c1.beginPath();
+				c1.fillStyle = "#be9658";
+				c1.strokeStyle = "#e2bb5e";
+				c1.lineWidth = 10;
+				c1.arc(455, 282, 45, 0, Math.PI, 1);
+				c1.fill();
+				c1.stroke();
+				c1.closePath();
+				
+				c1.beginPath();
+				c1.strokeStyle = "#e2bb5e";
+				c1.lineWidth = 7;
+				c1.moveTo(410,320);
+				c1.lineTo(500, 320);
+				c1.stroke();
+				c1.closePath();
+				
+				c1.beginPath();
+				c1.strokeStyle = "#e2bb5e";
+				c1.lineWidth = 7;
+				c1.moveTo(410,360);
+				c1.lineTo(500, 360);
+				c1.stroke();
+				c1.closePath();
+				
+				c1.beginPath();
+				c1.strokeStyle = "#e2bb5e";
+				c1.lineWidth = 7;
+				c1.moveTo(455,285);
+				c1.lineTo(455, 410);
+				c1.stroke();
+				c1.closePath();
+				
+				c1.beginPath();
+				c1.strokeStyle = "#816d6c";
+				c1.lineWidth = 6;
+				c1.moveTo(448,330);
+				c1.lineTo(448, 350);
+				c1.stroke();
+				c1.closePath();
+				
+				c1.beginPath();
+				c1.strokeStyle = "#816d6c";
+				c1.lineWidth = 6;
+				c1.moveTo(462,330);
+				c1.lineTo(462, 350);
+				c1.stroke();
+				c1.closePath();
+				
+				c1.beginPath();
+				c1.fillStyle = "#fbfcf7";
+				c1.moveTo(550, 250);
+				c1.lineTo(680, 250);
+				c1.lineTo(680, 420);
+				c1.lineTo(550, 420);
+				c1.lineTo(550, 250);
+				c1.fill();
+				c1.closePath();
+				
+				c1.beginPath();
+				c1.fillStyle = "#dacfed";
+				c1.moveTo(560, 260);
+				c1.lineTo(670, 260);
+				c1.lineTo(670, 330);
+				c1.lineTo(560, 330);
+				c1.lineTo(560, 260);
+				c1.fill();
+				c1.closePath();
+				
+				
+				c1.beginPath();
+				c1.fillStyle = "#dacfed";
+				c1.moveTo(560, 350);
+				c1.lineTo(670, 350);
+				c1.lineTo(670, 410);
+				c1.lineTo(560, 410);
+				c1.lineTo(560, 350);
+				c1.fill();
+				c1.closePath();
+				
+				c1.beginPath();
+				c1.lineWidth = 6;
+				c1.strokeStyle = "#816d6c";
+				c1.moveTo(605, 342);
+				c1.lineTo(625, 342);
+				c1.stroke();
+				c1.closePath();
+
+			}
+		</script>
+	</head>
+
+	<body>
+		<canvas id="myCanvas" width="850" height="500"></canvas>
+	</body>
+
 </html>
